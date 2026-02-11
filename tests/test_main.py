@@ -1,5 +1,5 @@
 import pandas as pd
-from functions.file_readers import read_csv_to_dataframe
+from src.functions.file_readers import read_csv_to_dataframe
 from src.functions.core_functions import increment_id
 from src.functions.core_functions import return_four_letter_word
 def test_read_csv():
@@ -29,7 +29,7 @@ def test_check_id():
 def test_return_four_letter_word():
     newword = return_four_letter_word()
     assert len(newword) >= 10
-    assert newword.hasnumericvalue==true
-    has capitalletter
-    has special character
+    #assert newword.hasnumericvalue==true
+    #has capitalletter
+    #has special character
     
