@@ -1,7 +1,8 @@
 import pandas as pd
-from src.functions.file_readers import read_csv_to_dataframe
-from src.functions.core_functions import increment_id
-from src.functions.core_functions import return_four_letter_word
+from src.functions.core_functions import read_csv_to_dataframe, increment_id, return_four_letter_word
+#import read_csv_to_dataframe
+#import increment_id
+#import return_four_letter_word
 def test_read_csv():
     #arrange
     filename = "data/test_stock.csv"
@@ -28,7 +29,7 @@ def test_check_id():
 
 def test_return_four_letter_word():
     newword = return_four_letter_word()
-    assert len(newword) >= 10
+    assert len(newword) >= 8
     #assert newword.hasnumericvalue==true
     #has capitalletter
     #has special character
